@@ -1,0 +1,109 @@
+/** Alt custom CSS er lavet i sammenhæng med komplikationer med pagebuilderen DIVI. 
+    Important property er indsat for at overwrite default indstillinger i DIVI.  */
+
+/** Baggrundsfarven på hele body ændres til beige */
+
+body {
+  background-color: rgb(240, 238, 234) !important;
+}
+
+/** Produkt-slider kommer op på linJe med tekst-kolonnen ved siden af. Som default havde den padding som ikke allignede. 
+    Er indsat på alle slidere, fordi det ikke blot virkede at sætte dem ind i den samme bracket   */
+
+.ba_image_carousel_0 .dtq-carousel .slick-track {
+  padding: 0 !important;
+}
+
+.ba_image_carousel_1 .dtq-carousel .slick-track {
+  padding: 0 !important;
+}
+
+.ba_image_carousel_2 .dtq-carousel .slick-track {
+  padding: 0 !important;
+}
+
+.ba_image_carousel_3 .dtq-carousel .slick-track {
+  padding: 0 !important;
+}
+
+/** Produkt-sliders pile bliver får sin styling. Taget fra inspektion af selve page-builderen, da den ikke ville aktiveres når sitet gik live.
+    Er indsat på alle slidere, fordi det ikke blot virkede at sætte dem ind i den samme bracket   */
+.ba_image_carousel_0 .dtq-carousel .slick-arrow {
+  height: 33px;
+  width: 33px;
+  color: white;
+  background: #368c82; /** Produkt-slider kommer op på linJe med tekst-kolonnen ved siden af. Som default havde den padding som ikke allignede. 
+    Er indsat på alle slidere, fordi det ikke blot virkede at sætte dem ind i den samme bracket   */
+  border: 0px solid #333;
+  margin-top: -16.5px;
+  transform: skew(0deg);
+  top: 41%;
+}
+
+.ba_image_carousel_1 .dtq-carousel .slick-arrow {
+  height: 33px;
+  width: 33px;
+  color: white;
+  background: #368c82;
+  border: 0px solid #333;
+  margin-top: -16.5px;
+  transform: skew(0deg);
+  top: 41%;
+}
+
+.ba_image_carousel_2 .dtq-carousel .slick-arrow {
+  height: 33px;
+  width: 33px;
+  color: white;
+  background: #368c82;
+  border: 0px solid #333;
+  margin-top: -16.5px;
+  transform: skew(0deg);
+  top: 41%;
+}
+
+.ba_image_carousel_3 .dtq-carousel .slick-arrow {
+  height: 33px;
+  width: 33px;
+  color: white;
+  background: #368c82;
+  border: 0px solid #333;
+  margin-top: -16.5px;
+  transform: skew(0deg);
+  top: 41%;
+}
+
+/** .et-menu-nav ramme globalmenuen. a:hover rammes alle links ved hover. 
+    gør at der kommer border under teksten på alle links i globalmenuen ved hovereffekt  */
+.et-menu-nav a:hover {
+  border-bottom: solid 4px #f3efe7;
+}
+
+/** ..current-menu-item rammer den aktive side i globalmenuen. a rammer links.
+    Gør at der kommer border under teksten på aktive links i globalmenuen */
+.current-menu-item a {
+  border-bottom: solid 4px #f3efe7;
+  border-bottom: solid 4px #f3efe7;
+}
+
+/** Rammer knappen i nyhedsbrevet og gør den generelle bredde på knappen 20% */
+.et_pb_newsletter_button {
+  width: 20%;
+  border-width: 4px !important;
+}
+
+/** Bredde på nyhedsbrevs knap på skærme under 850px sættes til 30% */
+@media screen and (max-width: 850px) {
+  .et_pb_newsletter_button {
+    width: 30%;
+    border-width: 4px !important;
+  }
+}
+
+/** Bredde på nyhedsbrevs knap på skærme under 400px sættes til 50% */
+@media screen and (max-width: 400px) {
+  .et_pb_newsletter_button {
+    width: 50%;
+    border-width: 4px !important;
+  }
+}
